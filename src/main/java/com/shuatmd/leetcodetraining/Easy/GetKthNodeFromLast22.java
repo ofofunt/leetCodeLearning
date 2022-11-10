@@ -1,6 +1,6 @@
 package com.shuatmd.leetcodetraining.Easy;
 
-public class GetKthNodeFromLast {
+public class GetKthNodeFromLast22 {
     //Solution1:循环2次 效率稍微低一点
     public ListNode getKthFromEnd(ListNode head, int k) {
         if(head == null){
@@ -49,8 +49,8 @@ public class GetKthNodeFromLast {
 //        head.next = new ListNode(2);
 //        head.next.next = new ListNode(3);
 //        head.next.next.next = new ListNode(4);
-        GetKthNodeFromLast getKthNodeFromLast = new GetKthNodeFromLast();
-        getKthNodeFromLast.getKthFromEnd2(head, 1);
+        GetKthNodeFromLast22 getKthNodeFromLast22 = new GetKthNodeFromLast22();
+        getKthNodeFromLast22.getKthFromEnd2(head, 1);
 
     }
 }
