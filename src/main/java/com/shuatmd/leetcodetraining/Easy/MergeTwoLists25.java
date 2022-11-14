@@ -1,6 +1,6 @@
 package com.shuatmd.leetcodetraining.Easy;
 
-public class mergeTwoLists25 {
+public class MergeTwoLists25 {
     //Solution：双指针做法
     //头指针设置为dum，对l1+l2进行循环
     //如果l1大则将cur.next设置为l2，同时l2前进一步
