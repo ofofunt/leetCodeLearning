@@ -24,17 +24,17 @@ public class FindDuplicateNumber03 {
     /*Solution 2
      * Sort之后对比i与i+ 遍历完整个list之后就知道重复的部分
      */
-    public static int findRepeatNumber2(int[] nums) {
-        int res = -1;
-        List<Integer> integers = Arrays.stream(nums).sorted().boxed().toList();
-        for (int i = 0; i < nums.length - 1; i++) {
-            if (integers.get(i).equals(integers.get(i + 1))) {
-                res = integers.get(i);
-                return res;
-            }
-        }
-        return res;
-    }
+//    public static int findRepeatNumber2(int[] nums) {
+//        int res = -1;
+//        List<Integer> integers = Arrays.stream(nums).sorted().boxed().toList();
+//        for (int i = 0; i < nums.length - 1; i++) {
+//            if (integers.get(i).equals(integers.get(i + 1))) {
+//                res = integers.get(i);
+//                return res;
+//            }
+//        }
+//        return res;
+//    }
 
 
     public static int findRepeatNumber3(int[] nums) {
