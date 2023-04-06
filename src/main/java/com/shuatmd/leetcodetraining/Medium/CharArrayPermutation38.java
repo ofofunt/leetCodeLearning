@@ -23,6 +23,7 @@ public class CharArrayPermutation38 {
             res.add(String.valueOf(c));
         }
         HashSet<Character> set = new HashSet<>();
+        //
         for(int i= x; i < c.length; i++){
             //判断如果是在set中存在c[i],则表示已经有重复的排序,
             if(set.contains(c[i])){
@@ -40,4 +41,5 @@ public class CharArrayPermutation38 {
         c[i] = c[x];
         c[x] = tmp;
     }
+
 }
