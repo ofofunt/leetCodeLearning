@@ -1,13 +1,17 @@
 package com.shuatmd.leetcodetraining.Medium;
 
-import com.shuatmd.leetcodetraining.Easy.FindContinuousSequenceWithSumTarget57;
-import com.shuatmd.leetcodetraining.Easy.FirstUniqChar50;
-import com.shuatmd.leetcodetraining.Easy.MissingNumberInConsecutiveArray53;
-import com.shuatmd.leetcodetraining.Easy.ReverseWrods58;
+import com.shuatmd.leetcodetraining.Easy.*;
+import com.shuatmd.leetcodetraining.Hard.MaxIntInSlidingWindow59;
 import com.shuatmd.leetcodetraining.Hard.ReversePairsInArray51;
 
 public class CharArrayPermutation38test {
     public static void main(String[] args) {
+        DicesSumProbability60 dictionarySumProbability60 = new DicesSumProbability60();
+        dictionarySumProbability60.dicesProbabilityRecur(2);
+        MaxIntInSlidingWindow59 maxIntInSlidingWindow59 = new MaxIntInSlidingWindow59();
+        maxIntInSlidingWindow59.maxSlidingWindowOfficial(new int[]{7,2,4}, 2);
+        ReverseWordsLeftwards58 reverseWordsLeftwards58 = new ReverseWordsLeftwards58();
+        reverseWordsLeftwards58.reverseLeftWords("abcdefg", 2);
         ReverseWrods58 reverseWrods58 = new ReverseWrods58();
         reverseWrods58.reverseWordsOfficial("the sky is blue");
         FindContinuousSequenceWithSumTarget57 findContinuousSequenceWithSumTarget57 = new FindContinuousSequenceWithSumTarget57();
