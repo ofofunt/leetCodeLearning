@@ -6,8 +6,16 @@ import com.shuatmd.leetcodetraining.Hard.ReversePairsInArray51;
 
 public class CharArrayPermutation38test {
     public static void main(String[] args) {
+        MultiplierMatrix66 matrix = new MultiplierMatrix66();
+        matrix.constructArr(new int[]{1,2,3,4,5});
+        ImplementAdd65 add = new ImplementAdd65();
+        add.add(3,6);
+        SumNumbers64 sums = new SumNumbers64();
+        sums.sumNumsException(10);
+        MaxProfitStock63 max = new MaxProfitStock63();
+        max.maxProfit(new int[]{7,1,5,3,6,4});
         DicesSumProbability60 dictionarySumProbability60 = new DicesSumProbability60();
-        dictionarySumProbability60.dicesProbabilityRecur(2);
+        dictionarySumProbability60.dicesProbabilityDp(3);
         MaxIntInSlidingWindow59 maxIntInSlidingWindow59 = new MaxIntInSlidingWindow59();
         maxIntInSlidingWindow59.maxSlidingWindowOfficial(new int[]{7,2,4}, 2);
         ReverseWordsLeftwards58 reverseWordsLeftwards58 = new ReverseWordsLeftwards58();

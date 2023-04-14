@@ -1,6 +1,27 @@
 package com.shuatmd.leetcodetraining.Medium;
 
+import java.util.Arrays;
+
 public class DicesSumProbability60 {
+    //dp解法：用正向dp来做
+    public double[] dicesProbabilityDp(int n) {
+        //初始化最初的概率数组
+        double[] dp = new double[6];
+        Arrays.fill(dp, 1.0/6.0);
+        //从第二颗骰子开始进行dp推导
+        for (int i = 2; i <= n; i++) {
+            //当前骰子数的骰子的和的总数为6n - n + 1
+            double[] tmp = new double[5*i + 1];
+            //遍历每一种可能得和
+            for (int j = 0; j < dp.length; j++) {
+                for (int k = 0; k < 6; k++) {
+                    tmp[j + k] += dp[j] / 6.0;
+                }
+            }
+            dp = tmp;
+        }
+        return dp;
+    }
     //递归解法1：通过递归公式来做
     public double[] dicesProbabilityRecur(int n) {
         //假设我们已经知道有n - 1个骰子的时候,骰子和的概率,递推当有n个骰子,且骰子和为x的情况
