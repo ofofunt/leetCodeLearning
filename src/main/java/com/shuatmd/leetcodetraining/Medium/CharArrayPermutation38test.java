@@ -2,22 +2,43 @@ package com.shuatmd.leetcodetraining.Medium;
 
 import com.shuatmd.leetcodetraining.Easy.*;
 import com.shuatmd.leetcodetraining.Hard.MaxIntInSlidingWindow59;
+import com.shuatmd.leetcodetraining.Hard.MinWindowContainTargetString017;
 import com.shuatmd.leetcodetraining.Hard.ReversePairsInArray51;
 
 public class CharArrayPermutation38test {
     public static void main(String[] args) {
+        MinWindowContainTargetString017 min = new MinWindowContainTargetString017();
+        min.minWindow("ADOBECODEBANC", "ABC");
+        LongestSubstringWIthoutDuplication016 lengths =  new LongestSubstringWIthoutDuplication016();
+        lengths.lengthOfLongestSubstring2("pwwkew");
+        InclusionSubstring014 inclusionSubstring014 = new InclusionSubstring014();
+        inclusionSubstring014.checkInclusion("adc","dcda");
+        FindMaxLengthSubArrayBalanced011 findMaxLengthSubArray =  new FindMaxLengthSubArrayBalanced011();
+        findMaxLengthSubArray.findMaxLength(new int[]{0,1,0,1});
+        SubArrayProductLessThan009 subArrayProductLessThan009 = new SubArrayProductLessThan009();
+        subArrayProductLessThan009.numSubarrayProductLessThanK(new int[]{1,2,3}, 0);
+        MinSubArrayLen008 minSubArrayLen008 = new MinSubArrayLen008();
+        minSubArrayLen008.minSubArrayLen(213, new int[]{12,28,83,4,25,26,25,2,25,25,25,12});
+        MaxProductForWords005 maxProductForWords005 = new MaxProductForWords005();
+        maxProductForWords005.maxProduct(new String[]{"abcw","baz","foo","bar","xtfn","abcdef"});
+        CountBits003 c = new CountBits003();
+        c.countBits(9);
+        BinaryAdd002 b = new BinaryAdd002();
+        b.addBinaryMock("10", "11");
+        PokerStraight61 pokerStraight61 = new PokerStraight61();
+        pokerStraight61.isStraight(new int[]{0, 0, 0, 1, 2, 5});
         MultiplierMatrix66 matrix = new MultiplierMatrix66();
-        matrix.constructArr(new int[]{1,2,3,4,5});
+        matrix.constructArr(new int[]{1, 2, 3, 4, 5});
         ImplementAdd65 add = new ImplementAdd65();
-        add.add(3,6);
+        add.add(3, 6);
         SumNumbers64 sums = new SumNumbers64();
         sums.sumNumsException(10);
         MaxProfitStock63 max = new MaxProfitStock63();
-        max.maxProfit(new int[]{7,1,5,3,6,4});
+        max.maxProfit(new int[]{7, 1, 5, 3, 6, 4});
         DicesSumProbability60 dictionarySumProbability60 = new DicesSumProbability60();
         dictionarySumProbability60.dicesProbabilityDp(3);
         MaxIntInSlidingWindow59 maxIntInSlidingWindow59 = new MaxIntInSlidingWindow59();
-        maxIntInSlidingWindow59.maxSlidingWindowOfficial(new int[]{7,2,4}, 2);
+        maxIntInSlidingWindow59.maxSlidingWindowOfficial(new int[]{7, 2, 4}, 2);
         ReverseWordsLeftwards58 reverseWordsLeftwards58 = new ReverseWordsLeftwards58();
         reverseWordsLeftwards58.reverseLeftWords("abcdefg", 2);
         ReverseWrods58 reverseWrods58 = new ReverseWrods58();
@@ -25,7 +46,7 @@ public class CharArrayPermutation38test {
         FindContinuousSequenceWithSumTarget57 findContinuousSequenceWithSumTarget57 = new FindContinuousSequenceWithSumTarget57();
         findContinuousSequenceWithSumTarget57.findContinuousSequenceScrollWindow(9);
         MissingNumberInConsecutiveArray53 missingNumberInConsecutiveArray = new MissingNumberInConsecutiveArray53();
-        System.out.println(missingNumberInConsecutiveArray.missingNumber(new int[]{0,1,2,3,4,6}));
+        System.out.println(missingNumberInConsecutiveArray.missingNumber(new int[]{0, 1, 2, 3, 4, 6}));
         CharArrayPermutation38 charArrayPermutation = new CharArrayPermutation38();
         ReversePairsInArray51 reversePairsInArray = new ReversePairsInArray51();
         reversePairsInArray.reversePairs(new int[]{7, 3, 2, 6, 0, 1, 5, 4});
