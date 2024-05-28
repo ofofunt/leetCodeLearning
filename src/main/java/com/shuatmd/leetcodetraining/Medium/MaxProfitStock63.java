@@ -8,6 +8,7 @@ import java.util.stream.IntStream;
 //假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？
 public class MaxProfitStock63 {
     //官方解法：直截了当最快
+    //因为只涉及一次买卖 所以只用记录每天的历史最低价 然后判断当天卖的收益
     public int maxProfitOfficial(int[] prices) {
         int minPrice = Integer.MAX_VALUE;
         int maxProfit = 0;

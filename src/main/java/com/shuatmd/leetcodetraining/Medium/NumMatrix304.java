@@ -14,17 +14,18 @@ public class NumMatrix304 {
     //先求出从(0,0)到(i,j)的前缀和 之后通过裁剪的到最终结果
     int[][] preSum;
     public NumMatrix304(int[][] matrix) {
-        preSum = new int[matrix.length][matrix[0].length+1];
+        preSum = new int[matrix.length + 1][matrix[0].length+1];
         int sum = 0;
+        //算出从顶点到j的各个前缀和
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[0].length; j++) {
-
+                preSum[i + 1][j + 1] = preSum[i][j + 1] +preSum[i + 1][j] - preSum[1][j] + matrix[i][j];
             }
         }
     }
 
     public int sumRegion(int row1, int col1, int row2, int col2) {
-
+        return preSum[row2 + 1][col2 + 1] - preSum[row2 + 1][col1] - preSum[row1][col2 + 1] + preSum[row1][col1];
     }
     //手搓尝试
     //将矩阵转换为前缀和矩阵
